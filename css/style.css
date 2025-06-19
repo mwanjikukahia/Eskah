@@ -1,0 +1,162 @@
+
+
+
+/* Testimonials Section */
+.eskah-testimonials {
+  background: linear-gradient(135deg, #f9f9f9, #f0f0f0);
+}
+
+.testimonial-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.eskah-testimonial-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 320px;
+  border-left: 6px solid #88b73b;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+
+  /* Animation */
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeftToRight 0.6s forwards ease-out;
+}
+
+/* Stagger delays for testimonial cards */
+.eskah-testimonial-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.eskah-testimonial-card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.eskah-testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.eskah-testimonial-card p {
+  font-style: italic;
+  color: #555;
+}
+
+.eskah-testimonial-card strong {
+  color: #945916;
+  display: block;
+  margin-top: 15px;
+}
+
+/* Call to Action */
+.eskah-cta {
+  background: #88b73b;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.eskah-cta a {
+  background: #fff;
+  color: #88b73b;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.eskah-cta a:hover {
+  background: #945916;
+  color: #fff;
+}
+
+/* Tools Section */
+
+.tools-slider {
+  overflow: hidden;
+  position: relative;
+  height: 90px;
+  background: #f5f5f5;
+  margin-top: 30px;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(200px * 20); /* Adjusted for 10 logos × 2 */
+  animation: scroll 30s linear infinite;
+}
+
+.slide-track img {
+  height: 60px;
+  width: auto;
+  margin: 0 30px;
+  filter: grayscale(40%);
+  transition: filter 0.3s ease;
+}
+
+.slide-track img:hover {
+  filter: grayscale(0%);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* FAQs */
+.eskah-faqs .faq-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+details {
+  margin-bottom: 20px;
+  background: #fff9f5;
+  padding: 18px;
+  border-left: 5px solid #945916;
+  border-radius: 10px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+}
+
+summary::marker {
+  color: #88b73b;
+}
+
+@keyframes slideInLeftToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2em;
+  }
+
+  .testimonial-grid,
+  .tools-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
