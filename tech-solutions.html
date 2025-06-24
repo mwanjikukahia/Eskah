@@ -81,123 +81,262 @@
 <div class="w-full max-w-5xl mx-auto px-2">
 
   <!-- MAIN NAVBAR -->
-  <div class="container mx-auto flex justify-between items-center py-4 px-4">
-    <!-- Logo -->
-    <a href="#">
-      <img src="assets/Eskah/MSN LOGO (5).png" alt="Eskah Edge Logo" class="w-28 h-auto">
-    </a>
-
-    <!-- Nav Links -->
-    <nav class="hidden md:flex space-x-8 items-center">
-      <a href="index.html" class="font-semibold hover:text-[#4f3c0b]"><b>Home</b></a>
+    <!-- MAIN NAVBAR -->
+    <div class="container mx-auto flex justify-between items-center py-4 px-4">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="assets/Eskah/MSN LOGO (5).png" alt="Eskah Edge Logo" class="w-28 h-auto">
+      </a>
     
-      <!-- Services Dropdown -->
-      <div class="relative group">
-        <button class="font-semibold hover:text-[#4f3c0b] flex items-center">
-          <b>Services</b>
-          <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M5.5 7l4.5 5 4.5-5H5.5z"/>
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex space-x-8 items-center">
+        <a href="index.html" class="font-semibold hover:text-[#4f3c0b]"><b>Home</b></a>
+    
+        <!-- Services Dropdown (Responsive + Tailwind Only) -->
+        <div class="relative">
+          <details class="relative">
+            <summary class="list-none text-[#4f3c0b] font-semibold hover:text-white bg-[#89C35C] hover:bg-[#804A00] px-4 py-2 rounded-lg flex items-center gap-1 transition cursor-pointer">
+              <b>Services</b>
+              <svg class="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M5.5 7l4.5 5 4.5-5H5.5z" />
+              </svg>
+            </summary>
+            <div class="absolute left-0 bg-white shadow-lg rounded-lg py-2 mt-2 z-50 w-48 border border-[#ccc]">
+              <a href="tech-solutions.html" class="block px-4 py-2 text-[#4f3c0b] hover:bg-[#f4f4f4] hover:text-[#804A00] transition"><b>Tech Solutions</b></a>
+              <a href="marketing-solutions.html" class="block px-4 py-2 text-[#4f3c0b] hover:bg-[#f4f4f4] hover:text-[#804A00] transition"><b>Marketing Solutions</b></a>
+              <a href="admin-solutions.html" class="block px-4 py-2 text-[#4f3c0b] hover:bg-[#f4f4f4] hover:text-[#804A00] transition"><b>Admin Solutions</b></a>
+            </div>
+          </details>
+        </div>
+    
+        <a href="About.html" class="font-semibold hover:text-[#4f3c0b]"><b>About Us</b></a>
+        <a href="contact.html" class="font-semibold hover:text-[#4f3c0b]"><b>Contact Us</b></a>
+        <a href="quote.html" class="bg-[#4f3c0b] text-white px-4 py-2 rounded hover:bg-[#b0f254] transition-colors duration-300"><b>Get Started</b></a>
+      </nav>
+    
+      <!-- Mobile Hamburger -->
+      <div class="md:hidden">
+        <button id="menu-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-    
-        <div class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg py-2 mt-2 z-10 w-48">
-          <a href="tech-solutions.html" class="block px-4 py-2 hover:bg-[#f4f4f4] text-[#4f3c0b]">Tech Solutions</a>
-          <a href="marketing-solutions.html" class="block px-4 py-2 hover:bg-[#f4f4f4] text-[#4f3c0b]">Marketing Solutions</a>
-          <a href="admin-solutions.html" class="block px-4 py-2 hover:bg-[#f4f4f4] text-[#4f3c0b]">Admin Solutions</a>
-        </div>
       </div>
-    
-      <a href="About.html" class="font-semibold hover:text-[#4f3c0b]"><b>About Us</b></a>
-      <a href="contact.html" class="font-semibold hover:text-[#4f3c0b]"><b>Contact Us</b></a>
-      <a href="quote.html" class="bg-[#4f3c0b] text-white px-4 py-2 rounded hover:bg-[#b0f254] transition-colors duration-300"><b>Get Started</b></a>
-    </nav>
-    
-
-    <!-- Mobile Hamburger -->
-    <div class="md:hidden">
-      <button id="menu-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
     </div>
-  </div>
-  
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-white shadow px-4 py-4">
-    <a href="index.html" class="block py-2">Home</a>
-    <a href="services.html" class="block py-2">Services</a>
-    <a href="About.HTML" class="block py-2">About Us</a>
-    <a href="contact.html" class="block py-2">Contact Us</a>
-    <a href="quote.html" class="bg-[#4f3c0b] text-white px-4 py-2 rounded hover:bg-[#b0f254] transition-colors duration-300"><b>Get Started</b></a>
-  </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow px-4 py-4">
+      <a href="index.html" class="block py-2 font-semibold text-[#4f3c0b]">Home</a>
+      
+      <!-- Services Dropdown for Mobile -->
+      <details class="block py-2 text-[#4f3c0b]">
+        <summary class="cursor-pointer font-semibold">Services</summary>
+        <div class="pl-4 mt-2 space-y-1">
+          <a href="tech-solutions.html" class="block hover:text-[#804A00]">Tech Solutions</a>
+          <a href="marketing-solutions.html" class="block hover:text-[#804A00]">Marketing Solutions</a>
+          <a href="admin-solutions.html" class="block hover:text-[#804A00]">Admin Solutions</a>
+        </div>
+      </details>
+    
+      <a href="About.html" class="block py-2 font-semibold text-[#4f3c0b]">About Us</a>
+      <a href="contact.html" class="block py-2 font-semibold text-[#4f3c0b]">Contact Us</a>
+      <a href="quote.html" class="block mt-2 bg-[#4f3c0b] text-white px-4 py-2 rounded hover:bg-[#b0f254] transition-colors duration-300 text-center font-semibold">Get Started</a>
+    </div>
+    
+    <!-- Simple JS for toggling mobile menu -->
+    <script>
+      const btn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+      });
+    </script>
 </div>
-  <!-- Simple JS for toggling mobile menu -->
-  <script>
-    const btn = document.getElementById('menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    btn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-    });
-  </script>
+
+
+
+
+
+
+
 
   <!-- FontAwesome -->
   <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 
 <!-- 1st section -->
-<section class="py-20 bg-gradient-to-b from-[#f7f7f7] to-[#e0e0e0]">
+<section class="py-14 bg-[#f9f9f9] font-sans">
   <div class="max-w-7xl mx-auto px-6 text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">
-        <span class="text-[#89C35C]">Our</span> 
-        <span class="text-[#804A00]">Tech Solutions </span> 
-        <span class="relative inline-block h-[1.2em] overflow-hidden">
-          <span id="words" class="absolute w-full transition-all duration-500 ease-in-out"></span>
-        </span>
-      </h2>
-      <p class="text-lg text-gray-700 font-medium">
-        <span class="text-[#66A444] font-semibold">Reliable</span>. 
-        <span class="text-[#89C35C] font-semibold">Scalable</span>. 
-        <span class="text-[#804A00] font-semibold">Tailored</span> solutions for your business growth.
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 leading-tight mb-4">
+      Digital Experiences<br />
+      <span class="text-[#23bd08]">That Perform</span> & <span class="text-[#804A00]">Deliver Results</span>
+    </h2>
+    <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+      Eskah Edge Limited helps businesses build, grow, and automate through beautiful design, intelligent systems, and ongoing support.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+
+    <!-- Web Development -->
+    <div class="bg-white rounded-3xl shadow-lg p-8 border-l-8 border-[#23bd08] group hover:shadow-2xl transition duration-500">
+      <div class="text-5xl text-[#23bd08] mb-4">💻</div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2 group-hover:text-[#23bd08]">Web Development</h3>
+      <p class="text-sm text-gray-600 mb-4">
+        Custom business websites, eCommerce platforms, and user portals — fast, mobile-ready, and SEO-friendly.
       </p>
-    </div>
-    
-    
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-
-    <!-- Web Support & Maintenance -->
-    <div class="bg-white rounded-3xl shadow-xl p-8 hover:scale-105 transition duration-500 border-t-8 border-[#89C35C]">
-      <div class="mb-4">
-        <div class="text-5xl text-[#89C35C]">🛠️</div>
-      </div>
-      <h3 class="text-2xl font-bold mb-4 text-gray-800">Web Support & Maintenance</h3>
-      <p class="text-gray-600 mb-4">Hosting, backups, updates, bug fixing.</p>
-      <div class="text-sm font-medium text-[#804A00]">Example: Monthly SME support retainer</div>
+      <ul class="text-sm text-gray-700 list-disc list-inside space-y-1">
+        <li>Responsive Websites & Portfolios</li>
+        <li>Laravel Web Applications</li>
+        <li>Admin Panels & User Systems</li>
+        <li>Booking, eCommerce & Job Boards</li>
+        <li>M-Pesa & Card Payment Integration</li>
+      </ul>
     </div>
 
-    <!-- Domain & Hosting -->
-    <div class="bg-white rounded-3xl shadow-xl p-8 hover:scale-105 transition duration-500 border-t-8 border-[#804A00]">
-      <div class="mb-4">
-        <div class="text-5xl text-[#804A00]">🌐</div>
-      </div>
-      <h3 class="text-2xl font-bold mb-4 text-gray-800">Domain & Hosting</h3>
-      <p class="text-gray-600 mb-4">Full domain registration & SSL setup.</p>
-      <div class="text-sm font-medium text-[#89C35C]">Example: Full startup tech package</div>
+    <!-- Brand & Hosting Setup -->
+    <div class="bg-white rounded-3xl shadow-lg p-8 border-l-8 border-[#804A00] group hover:shadow-2xl transition duration-500">
+      <div class="text-5xl text-[#804A00] mb-4">🌐</div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2 group-hover:text-[#804A00]">Domains & Hosting</h3>
+      <p class="text-sm text-gray-600 mb-4">
+        Professional domain & email setup with fast, secure hosting — because your online brand deserves a strong foundation.
+      </p>
+      <ul class="text-sm text-gray-700 list-disc list-inside space-y-1">
+        <li>Domain search, registration & SSL</li>
+        <li>Business emails & DNS management</li>
+        <li>Hosting setup (shared/cloud)</li>
+        <li>Migration & launch support</li>
+      </ul>
     </div>
 
-    <!-- Software & Tech Consulting -->
-    <div class="bg-white rounded-3xl shadow-xl p-8 hover:scale-105 transition duration-500 border-t-8 border-[#66A444]">
-      <div class="mb-4">
-        <img src="assets/wanjiku.jpeg" alt="Tech Icon" class="w-16 h-16 object-contain mx-auto">
-      </div>
-      <h3 class="text-2xl font-bold mb-4 text-gray-800">Software & Tech Consulting</h3>
-      <p class="text-gray-600 mb-4">CRM, ERP, automation solutions.</p>
-      <div class="text-sm font-medium text-[#804A00]">Example: CRM integration for lead management</div>
+    <!-- Ongoing Support -->
+    <div class="bg-white rounded-3xl shadow-lg p-8 border-l-8 border-[#66A444] group hover:shadow-2xl transition duration-500">
+      <div class="text-5xl text-[#66A444] mb-4">🛠️</div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2 group-hover:text-[#66A444]">Support & Maintenance</h3>
+      <p class="text-sm text-gray-600 mb-4">
+        We maintain your site long after launch — updates, fixes, backups, performance tweaks, and more.
+      </p>
+      <ul class="text-sm text-gray-700 list-disc list-inside space-y-1">
+        <li>Monthly maintenance plans</li>
+        <li>Content edits & priority fixes</li>
+        <li>Plugin & security updates</li>
+        <li>Reports & traffic monitoring</li>
+      </ul>
+    </div>
+
+    <!-- Strategy & Consulting -->
+    <div class="bg-white rounded-3xl shadow-lg p-8 border-l-8 border-[#a06a2c] group hover:shadow-2xl transition duration-500">
+      <div class="text-5xl text-[#a06a2c] mb-4">🧠</div>
+      <h3 class="text-2xl font-semibold text-gray-800 mb-2 group-hover:text-[#a06a2c]">Tech Consulting</h3>
+      <p class="text-sm text-gray-600 mb-4">
+        Not sure what to build? We guide you from idea to launch — with the right tools, strategies, and platforms.
+      </p>
+      <ul class="text-sm text-gray-700 list-disc list-inside space-y-1">
+        <li>Business process automation</li>
+        <li>CRM & ERP system advisory</li>
+        <li>Tech stacks for startups</li>
+        <li>Digital roadmap planning</li>
+      </ul>
     </div>
 
   </div>
+
+  <!-- Call to Action -->
+  <div class="mt-16 text-center">
+    <a href="#" class="inline-block bg-[#23bd08] text-white font-bold py-3 px-6 rounded-full text-lg hover:bg-[#1e9c06] transition">
+      Start Your Digital Project with Us
+    </a>
+  </div>
 </section>
+
+
+
+<!-- payment -->
+
+<section class="py-16 px-6 md:px-20 bg-white font-sans">
+  <h2 class="text-4xl font-bold text-center text-[#23bd08] mb-3">Eskah Edge Website Packages</h2>
+  <p class="text-center text-gray-600 text-lg mb-12 italic">Smart websites tailored to elevate your brand, generate trust, and convert visitors into paying customers.</p>
+
+  <div class="grid gap-10 md:grid-cols-3">
+
+    <!-- Basic Website -->
+    <div class="rounded-2xl shadow-xl p-6 bg-[#e6f9ea] flex flex-col justify-between hover:shadow-2xl transition-all duration-300">
+      <div>
+        <h3 class="text-2xl font-bold text-[#1e8d04] mb-2">💻 Basic Website</h3>
+        <p class="text-sm text-gray-700 mb-4">A strong, clean, and fast website to give your small business or startup a solid digital foundation.</p>
+        <ul class="space-y-2 text-gray-800 text-sm font-medium">
+          <li>✅ 4 custom-designed pages (Home, About, Services, Contact)</li>
+          <li>✅ Fully mobile & tablet responsive</li>
+          <li>✅ WhatsApp Click-to-Chat button</li>
+          <li>✅ Contact form setup (email alerts)</li>
+          <li>✅ Basic SEO (meta tags, keywords)</li>
+          <li>✅ 1 round of content revision</li>
+          <li>✅ 1-month free support & maintenance</li>
+        </ul>
+        <p class="mt-4 text-xs italic text-gray-500">*Domain & hosting billed separately</p>
+      </div>
+      <button class="mt-6 bg-[#23bd08] text-white font-semibold py-2 rounded-lg text-center hover:bg-[#1aa106] transition">
+        Get it From Ksh 30,000
+      </button>
+    </div>
+
+    <!-- Business Website -->
+    <div class="rounded-2xl shadow-xl p-6 bg-[#fff3ed] flex flex-col justify-between hover:shadow-2xl transition-all duration-300">
+      <div>
+        <h3 class="text-2xl font-bold text-[#853f0d] mb-2">🚀 Business Website</h3>
+        <p class="text-sm text-gray-700 mb-4">A feature-packed site to boost trust, convert visitors into leads, and grow your authority online. Built with strategy, not just style.</p>
+        <ul class="space-y-2 text-gray-800 text-sm font-medium">
+          <li>✅ All Basic features</li>
+          <li>✅ Testimonials slider to build trust</li>
+          <li>✅ Floating WhatsApp icon (visible on all pages)</li>
+          <li>✅ Blog-ready layout (for updates, SEO, or tips)</li>
+          <li>✅ Social media integration (links/icons)</li>
+          <li>✅ Enhanced homepage with value sections</li>
+          <li>✅ Clickable buttons for calls, bookings, or CTAs</li>
+          <li>✅ 1-month free support & maintenance</li>
+        </ul>
+        <p class="mt-4 text-xs italic text-gray-500">*Domain & hosting billed separately</p>
+      </div>
+      <button class="mt-6 bg-[#853f0d] text-white font-semibold py-2 rounded-lg text-center hover:bg-[#6e2f0b] transition">
+        Get it from Ksh 45,000
+      </button>
+    </div>
+
+    <!-- Premium Website -->
+    <div class="rounded-2xl shadow-xl p-6 bg-[#f8f8f8] flex flex-col justify-between hover:shadow-2xl transition-all duration-300">
+      <div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-2">🏢 Premium Corporate Website</h3>
+        <p class="text-sm text-gray-700 mb-4">For serious brands needing trust, automation, and branded professionalism. Your digital headquarters, fully managed.</p>
+        <ul class="space-y-2 text-gray-800 text-sm font-medium">
+          <li>✅ All Business features</li>
+          <li>✅ Up to 8 detailed pages (e.g., Projects, Pricing, Team)</li>
+          <li>✅ PDF Company Profile upload/download</li>
+          <li>✅ Google Maps, calendar tools, and forms</li>
+          <li>✅ Custom quote/request forms</li>
+          <li>✅ Payment integration (M-Pesa, Card options)</li>
+          <li>✅ SEO audit report + 1-month post-launch support</li>
+        </ul>
+        <p class="mt-4 text-xs italic text-gray-500">*Domain & hosting billed separately</p>
+      </div>
+      <button class="mt-6 bg-gray-800 text-white font-semibold py-2 rounded-lg text-center hover:bg-black transition">
+        Get it from Ksh 65,000
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Add-ons Section -->
+  <div class="mt-16">
+    <h4 class="text-xl font-semibold text-center text-gray-700 mb-4">🧾 Optional Add-Ons</h4>
+    <ul class="text-center text-sm text-gray-700 space-y-1 font-medium">
+      <li>🛠 Monthly Maintenance – From <strong>Ksh 10,000</strong></li>
+      <li>🌐 Domain & Hosting Setup – <strong>Varies by provider (we assist)</strong></li>
+      <li>🎨 Logo Design – From <strong>Ksh 1,000</strong></li>
+      <li>📈 Google Analytics Setup – <strong>Ksh 1,500</strong></li>
+      <li>🖊 Content Writing – From <strong>Ksh 1,000 per page</strong></li>
+    </ul>
+  </div>
+</section>
+
 
 
   
@@ -654,11 +793,10 @@
       <div>
         <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
         <ul class="space-y-3">
-          <li><a href="#" class="hover:text-[#32e275] transition">Home</a></li>
-          <li><a href="#" class="hover:text-[#32e275] transition">About Us</a></li>
-          <li><a href="#" class="hover:text-[#32e275] transition">Services</a></li>
-          <li><a href="#" class="hover:text-[#32e275] transition">Projects</a></li>
-          <li><a href="#" class="hover:text-[#32e275] transition">Contact Us</a></li>
+          <li><a href="index.html" class="hover:text-[#32e275] transition">Home</a></li>
+          <li><a href="About.html" class="hover:text-[#32e275] transition">About Us</a></li>
+          <li><a href="index.html" class="hover:text-[#32e275] transition">Services</a></li>
+          <li><a href="contact.html" class="hover:text-[#32e275] transition">Contact Us</a></li>
         </ul>
       </div>
 
