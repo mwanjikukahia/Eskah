@@ -1,0 +1,13 @@
+{
+    "rewrites": [
+      { "source": "/", "destination": "/index.html" },
+      { "source": "/about", "destination": "/more.html" },
+      { "source": "/contact", "destination": "/contact.html" },
+      { "source": "/quote", "destination": "/quote.html" },
+      { "source": "/thankyou", "destination": "/thankyou.html" },
+      { "source": "/tech-solutions", "destination": "/tech-solutions.html" },
+      { "source": "/marketing-solutions", "destination": "/marketing-solutions.html" },
+      { "source": "/admin-solutions", "destination": "/admin-solutions.html" }
+    ]
+  }
+  
