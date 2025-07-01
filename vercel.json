@@ -10,6 +10,7 @@
     { "source": "/admin-solutions", "destination": "/admin-solutions/index.html" }
   ],
   "redirects": [
+    { "source": "/about/index.html", "destination": "/about", "permanent": true },
     { "source": "/contact/index.html", "destination": "/contact", "permanent": true },
     { "source": "/quote/index.html", "destination": "/quote", "permanent": true },
     { "source": "/tech-solutions/index.html", "destination": "/tech-solutions", "permanent": true },
@@ -17,5 +18,3 @@
     { "source": "/admin-solutions/index.html", "destination": "/admin-solutions", "permanent": true }
   ]
 }
-
-  
