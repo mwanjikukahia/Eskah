@@ -10,6 +10,7 @@
     { "source": "/admin-solutions", "destination": "/admin-solutions/index.html" }
   ],
   "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/about/index.html", "destination": "/about", "permanent": true },
     { "source": "/contact/index.html", "destination": "/contact", "permanent": true },
     { "source": "/quote/index.html", "destination": "/quote", "permanent": true },
