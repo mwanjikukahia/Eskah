@@ -1,13 +1,13 @@
 {
     "rewrites": [
       { "source": "/", "destination": "//index.html" },
-      { "source": "/about", "destination": "/more.html" },
-      { "source": "/contact", "destination": "//contact.html" },
-      { "source": "/quote", "destination": "//quote.html" },
+      { "source": "/about", "destination": "/about/index.html" },
+      { "source": "/contact", "destination": "///contact/index.html" },
+      { "source": "/quote", "destination": "///quote/index.html" },
       { "source": "/thankyou", "destination": "/thankyou.html" },
-      { "source": "/tech-solutions", "destination": "//tech-solutions.html" },
-      { "source": "/marketing-solutions", "destination": "//marketing-solutions.html" },
-      { "source": "/admin-solutions", "destination": "//admin-solutions.html" }
+      { "source": "/tech-solutions", "destination": "///tech-solutions/index.html" },
+      { "source": "/marketing-solutions", "destination": "//marketing-solutions/index.html" },
+      { "source": "/admin-solutions", "destination": "//admin-solutions/index.html" }
     ]
   }
   
