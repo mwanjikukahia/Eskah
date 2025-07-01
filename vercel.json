@@ -1,13 +1,21 @@
 {
-    "rewrites": [
-      { "source": "/", "destination": "//index.html" },
-      { "source": "/about", "destination": "/about/index.html" },
-      { "source": "/contact", "destination": "///contact/index.html" },
-      { "source": "/quote", "destination": "///quote/index.html" },
-      { "source": "/thankyou", "destination": "/thankyou.html" },
-      { "source": "/tech-solutions", "destination": "///tech-solutions/index.html" },
-      { "source": "/marketing-solutions", "destination": "//marketing-solutions/index.html" },
-      { "source": "/admin-solutions", "destination": "//admin-solutions/index.html" }
-    ]
-  }
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/about", "destination": "/about/index.html" },
+    { "source": "/contact", "destination": "/contact/index.html" },
+    { "source": "/quote", "destination": "/quote/index.html" },
+    { "source": "/thankyou", "destination": "/thankyou.html" },
+    { "source": "/tech-solutions", "destination": "/tech-solutions/index.html" },
+    { "source": "/marketing-solutions", "destination": "/marketing-solutions/index.html" },
+    { "source": "/admin-solutions", "destination": "/admin-solutions/index.html" }
+  ],
+  "redirects": [
+    { "source": "/contact/index.html", "destination": "/contact", "permanent": true },
+    { "source": "/quote/index.html", "destination": "/quote", "permanent": true },
+    { "source": "/tech-solutions/index.html", "destination": "/tech-solutions", "permanent": true },
+    { "source": "/marketing-solutions/index.html", "destination": "/marketing-solutions", "permanent": true },
+    { "source": "/admin-solutions/index.html", "destination": "/admin-solutions", "permanent": true }
+  ]
+}
+
   
